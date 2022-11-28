@@ -1,3 +1,3 @@
 # homework_csh
 
-Homework after first seminar.
+Homework after seminar.
