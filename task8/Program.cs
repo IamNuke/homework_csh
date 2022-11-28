@@ -2,16 +2,16 @@
 
 Console.Clear();
 
-Console.WriteLine("Enter number: ");
+Console.WriteLine("Enter numbers: ");
 
 int n = Convert.ToInt32(Console.ReadLine());
 int max1 = n;
 int max2 = n;
-n = Convert.ToInt32(Console.ReadLine());
-if (n > max1)
-    max1 = n;
-else
-    max2 = n;
+ n = Convert.ToInt32(Console.ReadLine());
+ if (n > max1)
+     max1 = n;
+ else
+     max2 = n;
 
 while (n != 0)
 {
@@ -26,5 +26,5 @@ while (n != 0)
     }
 };
 
-Console.Write(max2);
+Console.Write($"Second maximum: {max2}");
 
