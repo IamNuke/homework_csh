@@ -3,7 +3,8 @@
 int  Spiral(int w, int h, int x, int y)
 {
     // это подсмотрел и пока не разобрался 
-    return y>0 ? w + Spiral(h - 1, w, y - 1, w - x - 1) : x;
+    int z = y>0 ? w + Spiral(h - 1, w, y - 1, w - x - 1) : x; 
+    return z;
 }
 
 void recFillMatrix(int[,] matrix)
@@ -39,7 +40,7 @@ void PrintMatrix(int[,] matrix)
 
 //Console.Clear();
 //Console.WriteLine("Введите размер матрицы: ");
-int[] coord = {4,4};//Console.ReadLine().Split(" ").Select(s => int.Parse(s)).ToArray();
+int[] coord = {5,5};//Console.ReadLine().Split(" ").Select(s => int.Parse(s)).ToArray();
 int[,] matrix = new int[coord[0], coord[1]];
 recFillMatrix(matrix);
 PrintMatrix(matrix);
